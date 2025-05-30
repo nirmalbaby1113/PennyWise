@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "category": "Food",
+    "limit": 500.0,
+    "spent": 100.0
+  },
+  {
+    "id": 2,
+    "category": "Entertainment",
+    "limit": 300.0,
+    "spent": 150.0
+  }
+]
