@@ -7,6 +7,7 @@ import baby.nirmal.pennywise.data.local.dao.AccountDao
 import baby.nirmal.pennywise.data.local.dao.BudgetDao
 import baby.nirmal.pennywise.data.local.dao.TransactionDao
 import baby.nirmal.pennywise.data.remote.ApiService
+import baby.nirmal.pennywise.data.repository.UserPreferencesRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -45,6 +46,11 @@ object AppModule {
         return retrofit.create(ApiService::class.java)
     }
 
+    @Provides
+    @Singleton
+    fun provideUserPreferencesRepository(@ApplicationContext context: Context): UserPreferencesRepository {
+        return UserPreferencesRepository(context)
+    }
 
 
 
@@ -56,5 +62,6 @@ object AppModule {
 
     @Provides
     fun provideBudgetDao(db: AppDatabase): BudgetDao = db.budgetDao()
+
 
 }

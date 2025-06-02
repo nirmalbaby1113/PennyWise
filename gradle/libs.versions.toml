@@ -13,6 +13,7 @@ room = "2.7.1"
 retrofit = "3.0.0"
 paging = "3.3.6"
 hilt = "2.56.2"
+datastore = "1.1.0"
 
 
 [libraries]
@@ -32,6 +33,10 @@ retrofit-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref 
 paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+datastore-preferences = {module = "androidx.datastore:datastore-preferences", version.ref = "datastore"}
+
+
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
