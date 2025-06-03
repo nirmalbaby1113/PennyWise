@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PennyWise</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_nameAs_title">PennyWi$e</string>
+    <string name="transaction_title">Tran$action</string>
+    <string name="budget_title">Budget$</string>
+    <string name="settings_title">Setting$</string>
 </resources>
